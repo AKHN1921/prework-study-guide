@@ -1,9 +1,9 @@
 console.log ("Hello World")
 var topics = ["HTML", "CSS", "Git", "JavaScript"];
 console.log (topics)
-var topic = "HTML";
-
-if (topics.includes ('HTML')) {
+for(var i=0; i<topics.length; i++){
+    var topic = topics [i]
+if (topic === 'HTML') {
   console.log("Let's study HTML!");
 } else if (topic === 'CSS') {
   console.log("Let's study CSS!");
@@ -13,4 +13,5 @@ if (topics.includes ('HTML')) {
   console.log("Let's study JavaScript!");
 } else {
   console.log('Please try again!');
+}
 }
